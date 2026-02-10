@@ -2,8 +2,8 @@ import { defineConfig } from "prisma/config";
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 
-// Cargar .env.local
-dotenv.config({ path: path.resolve(__dirname, '.env.local') });
+// Cargar .env
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 export default defineConfig({
     schema: "prisma/schema.prisma",
